@@ -4,7 +4,7 @@ from hasjob import app
 from hasjob.models import db
 
 # Base setup to run tests
-class TestBase(TestCase):
+class TestBase(unittest.TestCase):
     def create_app(self):
         app.config['TESTING'] = True
         app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///test.db"
