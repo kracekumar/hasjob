@@ -4,5 +4,4 @@ python:
   - 2.7
 script: nosetests hasjob/tests
 notifications:
-  email: false
-  irc: "irc.freenode.net#hasgeek"
+  email: true
